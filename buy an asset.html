@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<type="html" lang="en" /type>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial scale="1.0">
+    <title>Eldorado world</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+   
+<body>
+
+
+<ul>
+   <li class="current"><a href="index.html"><span id="hp">go to home page</span></a></li>
+</ul>
+<p id="saying">Those that possess their assets have the key access to their world<br />
+    <span id="t">-urbane igbongi</span></p>
+
+    <form  action="sell.php" method="POST" onsubmit="return validate" name="sform" >
+      <div id="form">
+          <input type="text" class="full name" placeholder="Full Name" id="name"><br><br>
+          <input type="number" class="num" placeholder="Phone number" id="phn"><br><br>
+          <input type="text" class="email" placeholder="Valid Email" id="email"><br><br>
+          <input type="radio" class="button"  name="gender"><span>Male</span> <input type="radio" class="button"  name="gender"><span>Female</span><br><br>
+          <input type="submit" class="btn" value="Submit" name="Submit"> <br><br>
+      </div>
+    </form>
+    <aside id="usidebar">
+
+      <div id="upload">
+        <form  action="sell.php" method="POST" onsubmit="return validate" name="sform" enctype="multipart/form-data" >
+          <input type="hidden"   name="size" value="1000000">
+          <div>
+            <input type="file" name="image">
+          </div>
+          <div>
+            <textarea name="text" cols="50" rows="10" placeholder="Write details about this asset including location and type of asset"></textarea>
+          </div>
+          <div>
+            <input type="submit" name="upload" value="Upload image">
+          </div>
+      </form>
+      </div>
+    </aside>
+    
+
+    <footer id="sfooter">
+      Eldorado world: Copyright &copy; 2018
+</footer>
+
+</body>
+
+</html>
